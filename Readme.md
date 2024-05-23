@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Регина  Шакурова](https://up.htmlacademy.ru/adaptive-individual/1/user/2478871).
-* Наставник: `Виктория Никитина`.
+* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/adaptive-individual/1/user/2478871).
 
 ---
 
