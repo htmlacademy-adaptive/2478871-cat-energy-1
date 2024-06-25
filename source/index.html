@@ -11,30 +11,30 @@
   <header class="header">
     <a class="header__logo">
       <picture>
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1200px)" width="202px" hieght="59px">
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174px" hieght="50px">
         <img src="./img/logo-mobile.svg" width="33" height="38" alt="Cat logo">
       </picture>
     </a>
-    <nav class="nav">
+    <nav class="nav nav--closed">
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="nav__item nav__item--active">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav__list site-list">
+        <li class="nav__item nav__item--current">
+          <a class="nav__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main">
@@ -63,7 +63,8 @@
           <dt class="options__title">
             Набор массы
           </dt>
-          <dd class="options__description">Заработать авторитет среди дворовых котов и даже собак?<br> Серия Cat Energy Pro
+          <dd class="options__description">Заработать авторитет среди дворовых котов и даже собак?<br> Серия Cat Energy
+            Pro
             поможет вашему коту нарастить необходимые мышцы!</dd>
           <a class="options__catalog options__catalog--arrow2" href="#">Каталог pro</a>
         </div>
@@ -94,28 +95,33 @@
       </div>
     </section>
     <section class="example">
-      <div class="example-wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день.</p>
-      </div>
-      <div class="conclusions result">
-        <ul class="conclusions-list">
-          <li class="conclusions__item conclusions__item--weight">
-            <h3 class="conclusions__title">5 кг</h3>
-            <p class="conclusions__description">Снижение веса</p>
-          </li>
-          <li class="conclusions__item conclusions__item--time">
-            <h3 class="conclusions__title">60 дней</h3>
-            <p class="conclusions__description">Затрачено времени</p>
-          </li>
-        </ul>
-        <div class="conclusions__item conclusions__item--money">
-          <h3 class="conclusions__title2">Затраты на питание: 15 000 руб.</h3>
+      <div class="example__block">
+        <div class="example-wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16 часов в день.</p>
         </div>
+        <div class="example__container">
+          <div class="conclusions result">
+            <ul class="conclusions-list">
+              <li class="conclusions__item conclusions__item--weight">
+                <h3 class="conclusions__title">5 кг</h3>
+                <p class="conclusions__description">Снижение веса</p>
+              </li>
+              <li class="conclusions__item conclusions__item--time">
+                <h3 class="conclusions__title">60 дней</h3>
+                <p class="conclusions__description">Затрачено времени</p>
+              </li>
+            </ul>
+            <div class="conclusions__item conclusions__item--money">
+              <h3 class="conclusions__title2">Затраты на питание: 15 000 руб.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="example__slider slider"></div>
       </div>
-      <div class="example__slider slider"></div>
     </section>
   </main>
   <footer class="footer">
@@ -129,18 +135,19 @@
     <section class="map">
       <h3 class="visually-hidden">Карта</h3>
       <iframe class="footer__iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477031682!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1718196304285!5m2!1sru!2sru"
-      width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477031682!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1718196304285!5m2!1sru!2sru"
+        width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
       <picture>
         <img class="map-img" src="./img/location.jpg" width="320" height="362s" alt="location">
       </picture>
     </section>
     <div class="footer-wrapper">
-      <a class="logo__text" href="#" aria-label="Логотип сайта">
-      <img class="footer-logo" src="./img/footer-logo.svg" width="128" height="24" alt="Cat-logo">
-    </a>
-    </div>
+      <div class="footer__logo-website logo">
+        <a class="logo__text" href="#" aria-label="Логотип сайта">
+          <img class="footer-logo" src="./img/footer-logo.svg" width="128" height="24" alt="Cat-logo">
+        </a>
+      </div>
       <section class="social">
         <ul class="social__list">
           <li class="social__item">
@@ -187,7 +194,9 @@
         </a>
       </div>
     </div>
+    </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

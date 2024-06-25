@@ -20,6 +20,10 @@
   min-height: 367px;
   background-color: #f2f2f2;
   position: relative;
+
+  @media (min-width: @t) {
+    min-height: 402px;
+}
 }
 
 .footer__iframe {
@@ -27,8 +31,11 @@
   height: 362px;
   position: relative;
   z-index: 10;
-}
 
+  @media (min-width: @t) {
+    min-height: 397px;
+}
+}
 
 .map-img {
   position: absolute;
@@ -38,4 +45,9 @@
   height: 362px;
   z-index: 9;
   object-fit: cover;
+
+  @media (min-width: @t) {
+    min-height: 397px;
 }
+}
+
