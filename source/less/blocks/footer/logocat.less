@@ -3,11 +3,27 @@
   padding: 35px 0 20px;
   border-bottom: 1px solid #e6e6e6;
   background-color: #f2f2f2;
+
+  @media (min-width: @t) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 23px 30px;
+    background-color:  #f2f2f2;
+    }
+}
+
+.logo {
+  padding: 35px 0 20px;
 }
 
 .logo__text {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @t) {
+
+  }
 }
 
 .footer-logo {
@@ -15,4 +31,8 @@
   padding: 0;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @t) {
+
+  }
 }
