@@ -1,13 +1,4 @@
-.offer {
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: @d) {
-
-  }
-}
-
-.offer-wrapper {
+.address {
   margin: 0 auto;
   padding: 28px 22px 25px 20px;
   display: flex;
@@ -15,12 +6,26 @@
   justify-content: space-between;
 
   @media (min-width: @t) {
-    padding: 28px 22px 75px 20px;
-    width: 623px;
+    padding: 61px 69px 62px;
+
+    @media (min-width: @d) {
+      position: relative;
+      z-index: 11;
+      width:  565px;
+      margin: 0 0 0 -610px;
+      padding: 0;
+      gap: 0px;
+      justify-content: left;
+      right: -110px;
+          }
   }
 }
 
-.offer__descriptions {
+.address--form {
+background-color: #f2f2f2;
+}
+
+.address__invitation {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -28,9 +33,22 @@
   font-weight: 400;
   text-transform: uppercase;
   width: 136px;
+
+  @media (min-width: @t) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    padding-top: 1px;
+
+    @media (min-width: @d) {
+      padding: 62px 45px 59px 80px;
+      width: 180px;
+      background-color: #ffffff;
+    }
+  }
 }
 
-.offer__adress {
+.address__site {
   margin: 0;
   padding: 0;
   width: 140px;
@@ -38,4 +56,32 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (min-width: @t) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    text-align: right;
+
+    @media (min-width: @d) {
+      width: 190px;
+        text-align: left;
+        background-color: #ffffff;
+        padding: 60px 45px 59px 25px;
+    }
+  }
+}
+
+.address__street {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @t) {
+    margin-bottom: 20px;
+  }
+}
+
+.address__city {
+  margin: 0;
+  padding: 0;;
 }

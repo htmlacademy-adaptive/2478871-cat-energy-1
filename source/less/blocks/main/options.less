@@ -1,4 +1,4 @@
-.programs {
+.options_program {
   margin: 0;
   padding: 0;
 
@@ -6,7 +6,6 @@
     padding: 82px 109px 0 110px;
   }
 }
-
 
 .options {
   margin: 0;
@@ -150,13 +149,19 @@ position: relative;
     width: 24px;
     height: 12px;
     position: absolute;
-    left: calc(100% - 30px);
+    left: calc(100% - 139px);
     top: 21px;
     background: url("../img/arrow-long.svg") no-repeat right 0 top 0;
     transition: 0.5s width ease;
 
     @media (min-width: @t) {
-      left: calc(100% - 38px);
+      left: calc(100% - 505px);
+      top: 23px;
+      border-top: none;
+    }
+
+    @media (min-width: @d) {
+      left: calc(100% - 368px);
       top: 23px;
       border-top: none;
     }

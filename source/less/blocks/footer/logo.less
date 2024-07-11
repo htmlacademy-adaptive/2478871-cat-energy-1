@@ -1,4 +1,4 @@
-.footer-wrapper {
+.logo-wrapper {
   margin: 0;
   padding: 35px 0 20px;
   border-bottom: 1px solid #e6e6e6;
@@ -8,25 +8,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 23px 30px;
+    padding: 25px 30px;
     background-color:  #f2f2f2;
     }
 }
 
 .logo {
-  padding: 35px 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @t) {
+    padding-top: 34px;
+      }
+
+      @media (min-width: @d) {
+        border-bottom: none;
+    }
 }
 
 .logo__text {
   margin: 0;
   padding: 0;
-
-  @media (min-width: @t) {
-
-  }
+  color: black;
 }
 
-.footer-logo {
+.logo_footer {
   margin: 0 auto;
   padding: 0;
   display: flex;
