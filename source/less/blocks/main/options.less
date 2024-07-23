@@ -3,7 +3,9 @@
   padding: 0;
 
   @media (min-width: @d) {
-    padding: 82px 109px 0 110px;
+    padding-top: 82px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -29,18 +31,18 @@
   padding: 31px 0 14px 0;
   margin-bottom: 18px;
   list-style: none;
-position: relative;
+  position: relative;
 
-@media (min-width: @t) {
-  margin-bottom: 30px;
-  padding: 0 0 58px 0;
+  @media (min-width: @t) {
+    margin-bottom: 30px;
+    padding: 0 0 58px 0;
 
-  @media (min-width: @d) {
-    width: 571px;
-    padding: 78px 0 59px;
-    margin: 0;
+    @media (min-width: @d) {
+      width: 571px;
+      padding: 78px 0 59px;
+      margin: 0;
+    }
   }
-}
 }
 
 .options__item--slim {
@@ -130,10 +132,18 @@ position: relative;
   }
 }
 
-.options__catalog {
+.option-container {
   margin: 0 20px;
-  padding: 19px 0  0;
-  display: block;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @t) {
+    border-top: none;
+  }
+}
+
+.options__catalog {
+  padding: 19px 50px 0 0;
+  display: inline-block;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -142,26 +152,26 @@ position: relative;
   color: #000000;
   text-decoration: none;
   position: relative;
-  border-top: 1px solid #d9d9d9;
+
 
   &::after {
     content: "";
     width: 24px;
     height: 12px;
     position: absolute;
-    left: calc(100% - 139px);
+    left: calc(100% - 33px);
     top: 21px;
     background: url("../img/arrow-long.svg") no-repeat right 0 top 0;
     transition: 0.5s width ease;
 
     @media (min-width: @t) {
-      left: calc(100% - 505px);
+      left: calc(100% - 41px);
       top: 23px;
       border-top: none;
     }
 
     @media (min-width: @d) {
-      left: calc(100% - 368px);
+      left: calc(100% - 40px);
       top: 23px;
       border-top: none;
     }
@@ -174,9 +184,8 @@ position: relative;
   @media (min-width: @t) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 52px;
+    margin-left: 33px;
     padding-right: 65px;
     border-top: none;
   }
 }
-

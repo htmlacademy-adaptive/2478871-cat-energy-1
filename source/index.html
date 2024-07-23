@@ -9,7 +9,7 @@
 
 <body class="body body--index">
   <header class="header">
-    <div class="header-container">
+    <div class="header__container">
     <a class="header__logo">
       <picture>
         <source srcset="./img/logo-desktop.svg" media="(min-width: 1200px)" width="202px" hieght="59px">
@@ -26,7 +26,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="./catalog.html">
             Каталог продукции
           </a>
         </li>
@@ -58,8 +58,11 @@
           </dt>
           <dd class="options__description">Ваш кот весит больше собаки и почти утратил способность
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-            вашему питомцу сбросить лишний вес.</dd>
+            вашему питомцу сбросить лишний вес.
+          </dd>
+        <div class="option-container">
           <a class="options__catalog options__catalog--arrow" href="#">Каталог slim</a>
+        </div>
         </div>
         <div class="options__item options__item--back">
           <dt class="options__title">
@@ -68,7 +71,9 @@
           <dd class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro
             поможет вашему коту нарастить необходимые мышцы!</dd>
+            <div class="option-container">
           <a class="options__catalog options__catalog--arrow2" href="#">Каталог pro</a>
+        </div>
         </div>
       </dl>
     </section>
@@ -97,16 +102,11 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__block">
-        <div class="example-wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-            по
-            16 часов в день.</p>
-        </div>
-        <div class="example__container">
-          <div class="conclusions_result">
+            по 16 часов в день.</p>
+          <div class="conclusions__result">
             <ul class="conclusions-list">
               <li class="conclusions__item conclusions__item--weight">
                 <h3 class="conclusions__title">5 кг</h3>
@@ -120,8 +120,6 @@
             <div class="conclusions__item conclusions__item--money">
               <h3 class="conclusions__title2">Затраты на питание: 15 000 руб.</h3>
             </div>
-          </div>
-        </div>
       </div>
       <div class="example__slider slider">
         <ul class="slider__list">
@@ -141,7 +139,6 @@
         <button class="slider__handle" type="button">
           <span class="visually-hidden">Показать состояния пациента до и после</span>
         </button>
-      </div>
     </section>
   </main>
   <footer class="footer">
