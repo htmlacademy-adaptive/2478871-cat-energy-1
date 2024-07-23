@@ -20,7 +20,7 @@
     position: relative;
     height: 100%;
     margin: 0;
-    padding: 96px 0 106px 0;
+    padding: 96px 0 64px 0;
     box-sizing: border-box;
   }
 }
@@ -73,7 +73,8 @@
       display: flex;
       margin: 0;
       padding: 0;
-
+      width: 1440px;
+      margin: 0 auto;
     }
   }
 }
@@ -121,9 +122,12 @@
     padding-left: 31px;
     padding-top: 32px;
     border-bottom: none;
+
+    @media (min-width: @d) {
+      padding-left: 111px;
+    }
   }
 }
-
 
 .footer__social {
   margin: 0;
